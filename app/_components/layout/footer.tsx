@@ -4,7 +4,7 @@ import { Card, CardHeader } from "../ui/card";
 const Footer = () => {
   return (
     <footer>
-      <Card className="w-full bg-blue-950 rounded-none">
+      <Card className="w-full bg-blue-950 rounded-none border-none">
         <CardHeader className="text-sm text-center text-white">
           Pipley Bottom Farm &copy; 2024
           <div className="flex flex-col items-center space-y-3 mt-3">
