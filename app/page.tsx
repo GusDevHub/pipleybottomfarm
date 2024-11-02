@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-center">
       <Image
-        className="dark:invert"
+        className="rounded-lg"
         src="/logo.jpg"
         alt="Pipley Bottom Farm"
         width={402}
