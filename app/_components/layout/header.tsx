@@ -6,16 +6,16 @@ const Header = () => {
   return (
     <Card className="rounded-none">
       <CardHeader className="p-2 max-w-5xl mx-auto">
-        <div className="flex items-center justify-evenly space-x-6">
+        <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-6">
           <Image
-            className="rounded-lg sm:max-w-28"
+            className="rounded-lg w-32 sm:w-48"
             src="/logo.jpg"
             alt="Pipley Bottom Farm"
             width={201}
             height={95}
           />
           <nav>
-            <ul className="flex items-center justify-between space-x-6 text-green-900 font-semibold">
+            <ul className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-green-900 font-semibold">
               <li>
                 <Link href="/" className="hover:underline">
                   Home
