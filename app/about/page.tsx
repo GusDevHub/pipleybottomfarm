@@ -9,7 +9,7 @@ const AboutPage = () => {
         Local products for Local people A small farm of 42 acres offering
         agricultural services, livestock husbandry/ herd management, Stud
         services and Mare in foal, supply of hay, straw, haylage, firewood plus
-        forestry services including coppicing for 'Bio mass' and hedgerow
+        forestry services including coppicing for &apos;Bio mass&apos; and hedgerow
         laying.
       </p>
       <p className="py-3">
