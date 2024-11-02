@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "./_components/layout/header";
+import Footer from "./_components/layout/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -15,7 +17,8 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Pipley Bottom Farm",
-  description: "A small farm of 42 acres offering agricultural services, livestock husbandry/ herd management, Stud services and Mare in foal, supply of hay, straw, haylage, firewood plus forestry services including coppicing for 'Bio mass' and hedgerow laying.",
+  description:
+    "A small farm of 42 acres offering agricultural services, livestock husbandry/herd management, Stud services and Mare in foal, supply of hay, straw, haylage, firewood plus forestry services including coppicing for 'Bio mass' and hedgerow laying.",
 };
 
 export default function RootLayout({
@@ -26,9 +29,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`h-full relative ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <div className="flex-1">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
