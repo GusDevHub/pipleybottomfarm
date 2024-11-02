@@ -8,7 +8,7 @@ const Header = () => {
       <CardHeader className="p-2 max-w-5xl mx-auto">
         <div className="flex items-center justify-evenly space-x-6">
           <Image
-            className="rounded-lg"
+            className="rounded-lg sm:max-w-28"
             src="/logo.jpg"
             alt="Pipley Bottom Farm"
             width={201}
