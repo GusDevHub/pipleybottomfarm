@@ -1,8 +1,17 @@
 import Image from "next/image";
 import { Card, CardHeader } from "../ui/card";
 import Link from "next/link";
-import { Button } from "../ui/button";
 import { MenuIcon } from "lucide-react";
+import {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "../ui/sheet";
+import MenuGeneral from "./menu";
+import MenuMobile from "./menuMobile";
 
 const Header = () => {
   return (
@@ -23,48 +32,26 @@ const Header = () => {
           {/* Desktop Navigation (hidden on mobile) */}
           <nav className="hidden sm:block">
             <ul className="flex items-center space-x-6 text-green-900 font-semibold">
-              <li>
-                <Link href="/" className="hover:underline">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="hover:underline">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="hover:underline">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/products" className="hover:underline">
-                  Products
-                </Link>
-              </li>
-              <li>
-                <Link href="/wildcamping" className="hover:underline">
-                  Wild Camping
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="hover:underline">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="hover:underline">
-                  Contact
-                </Link>
-              </li>
+              <MenuGeneral />
             </ul>
           </nav>
 
           {/* Mobile Menu Button (hidden on larger screens) */}
-          <Button variant="outline" className="sm:hidden">
-            <MenuIcon size={24} />
-          </Button>
+          <Sheet>
+            <SheetTrigger className="sm:hidden">
+              <MenuIcon size={24} />
+            </SheetTrigger>
+            <SheetContent className="w-[400px] sm:w-[540px]">
+              <SheetHeader>
+                <SheetTitle className="text-sm text-left opacity-25">
+                  Menu
+                </SheetTitle>
+              </SheetHeader>
+              <SheetClose asChild>
+                <MenuMobile />
+              </SheetClose>
+            </SheetContent>
+          </Sheet>
         </div>
       </CardHeader>
     </Card>
