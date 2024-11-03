@@ -43,7 +43,7 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent className="w-[400px] sm:w-[540px]">
               <SheetHeader>
-                <SheetTitle className="text-sm text-left opacity-25">
+                <SheetTitle className="text-sm text-left opacity-25 pl-3">
                   Menu
                 </SheetTitle>
               </SheetHeader>
