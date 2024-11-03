@@ -37,6 +37,16 @@ const Header = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/wildcamping" className="hover:underline">
+                  Wild Camping
+                </Link>
+              </li>
+              <li>
+                <Link href="/blog" className="hover:underline">
+                  Blog
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="hover:underline">
                   Contact
                 </Link>
