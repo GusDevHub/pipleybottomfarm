@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Card, CardHeader } from "../ui/card";
 import Link from "next/link";
+import { MenuIcon } from "lucide-react";
 
 const Header = () => {
   return (
@@ -55,6 +56,7 @@ const Header = () => {
               </li>
             </ul>
           </nav>
+<MenuIcon size={24} />
         </div>
       </CardHeader>
     </Card>
