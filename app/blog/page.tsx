@@ -1,6 +1,6 @@
 const BlogPage = () => {
   return (
-    <div className="max-w-screen-lg mx-auto p-3">
+    <div>
       <h1 className="font-bold text-green-700">Blog</h1>
       <p className="py-3">
         Welcome to our blog

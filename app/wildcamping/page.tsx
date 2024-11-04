@@ -1,6 +1,6 @@
 const WildCampingPage = () => {
   return (
-    <div className="max-w-screen-lg mx-auto p-3">
+    <div>
       <h1 className="font-bold text-green-700">Wild Camping</h1>
       <p className="py-3">
         Local products for Local people A small farm of 42 acres offering
