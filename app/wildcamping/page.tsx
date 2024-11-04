@@ -1,17 +1,24 @@
+import Image from "next/image";
+
 const WildCampingPage = () => {
   return (
     <div>
       <h1 className="font-bold text-green-700">Wild Camping</h1>
       <p className="py-3">
-        Local products for Local people A small farm of 42 acres offering
-        agricultural services, livestock husbandry/ herd management, Stud
-        services and Mare in foal, supply of hay, straw, haylage, firewood plus
-        forestry services including coppicing for &apos;Bio mass&apos; and hedgerow
-        laying.
+        Noting: For the less wild at heart, we have a toilet nearby, access to
+        water and power if required (Power extra cost).
       </p>
       <p className="py-3">
-        We also offer wild camping and almost wild camping.
+        Camping: Come glamping Coleman 5 Birth tent set up with air beds - £40
+        per pitch per night.
       </p>
+      <Image
+        className="rounded-lg w-full max-w-3xl mt-3"
+        src="/wildcampingAtPipleyBottomFarm.jpg"
+        alt="Wild camping"
+        width={200}
+        height={95}
+      />
     </div>
   );
 };

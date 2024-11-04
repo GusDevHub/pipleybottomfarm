@@ -1,15 +1,14 @@
-
 const ServicesPage = () => {
   return (
     <div>
       <h1 className="font-bold text-green-700">Services</h1>
-      <p className="py-3">
-        Local products for Local people A small farm of 42 acres offering
-        agricultural services, livestock husbandry/ herd management, Stud
-        services and Mare in foal, supply of hay, straw, haylage, firewood plus
-        forestry services including coppicing for &apos;Bio mass&apos; and hedgerow
-        laying.
-      </p>
+      <p className="py-3">Blade, drill bits, Knife sharpening</p>
+      <p className="py-3">Horse Breeding</p>
+      <p className="py-3">Horse training and Horse driver development </p>
+      <p className="py-3">Bagot Goat Conservation Breeding</p>
+      <p className="py-3">Agricultural Contracting</p>
+      <p className="py-3">Shepherding</p>
+      <p className="py-3">Animal and Livestock Husbandry</p>
       <p className="py-3">
         We also offer wild camping and almost wild camping.
       </p>
