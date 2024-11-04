@@ -8,7 +8,6 @@ const MenuGeneral = () => {
   const isActive = (path: string) => pathname === path; // Function to check if the link is active
 
   const menuItems = [
-    { path: "/", label: "Home" },
     { path: "/about", label: "About" },
     { path: "/services", label: "Services" },
     { path: "/products", label: "Products" },
@@ -24,7 +23,7 @@ const MenuGeneral = () => {
         <li key={path}>
           <Link 
             href={path} 
-            className={`hover:opacity-50 ${isActive(path) ? "text-white bg-green-900 p-1 rounded-xl" : ""}`}
+            className={`border border-transparent p-1 rounded-xl hover:border-green-900 hover:border ${isActive(path) ? "text-white bg-green-900 p-1 rounded-xl" : ""}`}
           >
             {label}
           </Link>

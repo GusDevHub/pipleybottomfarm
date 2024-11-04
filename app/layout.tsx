@@ -27,9 +27,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-blue-950">
       <body
-        className={`h-full relative ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`bg-white h-full relative ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
         <div className="flex-1">

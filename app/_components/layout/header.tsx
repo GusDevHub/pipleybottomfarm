@@ -21,7 +21,7 @@ const Header = () => {
           {/* Logo */}
           <Link href="/">
             <Image
-              className="rounded-lg w-32 sm:w-48"
+              className="rounded-lg w-32 md:w-48"
               src="/logo.jpg"
               alt="Pipley Bottom Farm"
               width={201}
@@ -30,7 +30,7 @@ const Header = () => {
           </Link>
 
           {/* Desktop Navigation (hidden on mobile) */}
-          <nav className="hidden sm:block">
+          <nav className="hidden md:block">
             <ul className="flex items-center space-x-6 text-green-900 font-semibold">
               <MenuGeneral />
             </ul>
@@ -38,13 +38,13 @@ const Header = () => {
 
           {/* Mobile Menu Button (hidden on larger screens) */}
           <Sheet>
-            <SheetTrigger className="sm:hidden">
+            <SheetTrigger className="md:hidden text-blue-800 mr-3">
               <MenuIcon size={24} />
             </SheetTrigger>
             <SheetContent className="w-[400px] sm:w-[540px]">
               <SheetHeader>
-                <SheetTitle className="text-sm text-left opacity-25 pl-3">
-                  Menu
+                <SheetTitle className="text-xs text-left opacity-45 pl-3 uppercase">
+                  Navigation
                 </SheetTitle>
               </SheetHeader>
               <SheetClose asChild>

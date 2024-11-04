@@ -10,13 +10,13 @@ const MenuMobile = () => {
   const isActive = (path: string) => pathname === path;
 
   const menuItems = [
-    { path: "/", label: "Home" },
-    { path: "/about", label: "About" },
-    { path: "/services", label: "Services" },
-    { path: "/products", label: "Products" },
+    { path: "/", label: "Main Page" },
+    { path: "/about", label: "About Us" },
+    { path: "/services", label: "Our Services" },
+    { path: "/products", label: "Our Products" },
     { path: "/wildcamping", label: "Wild Camping" },
-    { path: "/blog", label: "Blog" },
-    { path: "/contact", label: "Contact" },
+    { path: "/blog", label: "Our Blog" },
+    { path: "/contact", label: "Contact Us" },
   ];
 
   return (
