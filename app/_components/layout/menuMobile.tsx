@@ -24,7 +24,7 @@ const MenuMobile = () => {
       <nav className="w-full">
         <ul className="flex flex-col items-center text-blue-900 font-semibold mt-3">
           {menuItems.map(({ path, label }) => (
-            <li key={path} className={`w-full border-b ${isActive(path) ? "bg-blue-800 text-white" : "hover:text-white hover:bg-blue-800"}`}>
+            <li key={path} className={`w-full border-b rounded-lg ${isActive(path) ? "bg-blue-800 text-white" : "hover:text-white hover:bg-blue-800"}`}>
               <SheetClose asChild>
                 <Link href={path} className="w-full block p-3" aria-current={isActive(path) ? "page" : undefined}>
                   {label}
