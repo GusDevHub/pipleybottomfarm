@@ -41,7 +41,7 @@ const Header = () => {
             <SheetTrigger className="md:hidden text-blue-800 mr-3">
               <MenuIcon size={24} />
             </SheetTrigger>
-            <SheetContent className="w-[400px] sm:w-[540px] overflow-y-auto [&::-webkit-scrollbar]:hidden">
+            <SheetContent className="w-[70%] sm:invisible overflow-y-auto [&::-webkit-scrollbar]:hidden">
               <SheetHeader>
                 <SheetTitle className="text-xs text-left opacity-45 pl-3 uppercase">
                   Navigation
