@@ -23,9 +23,9 @@ const MenuGeneral = () => {
         <li key={path}>
           <Link 
             href={path} 
-            className={`border border-transparent p-1 rounded-xl hover:border-green-900 hover:border ${isActive(path) ? "text-white bg-green-900 p-1 rounded-xl" : ""}`}
+            className={`border border-transparent p-1 rounded-xl hover:border-green-900 hover:border ${isActive(path) ? "text-white bg-green-900 py-1 px-2 rounded-xl" : ""}`}
           >
-            {label}
+            <span className="text-nowrap">{label}</span>
           </Link>
         </li>
       ))}
