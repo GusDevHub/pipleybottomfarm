@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="text-xs text-center pt-8 pb-3">
-            &copy; 2010 &mdash;&nbsp;{new Date().getFullYear()} Copyright
+            &copy; 2010 -&nbsp;{new Date().getFullYear()} Copyright
             <p className="font-bold text-center">
               Pipley Bottom Farm
             </p>
