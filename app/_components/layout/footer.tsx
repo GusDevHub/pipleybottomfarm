@@ -86,10 +86,10 @@ const Footer = () => {
                 <p className="font-bold text-base text-white">Explore</p>
               </div>
               <div className="flex flex-col items-baseline justify-start space-y-2 text-xs">
-                <Link href="#" className="hover:underline">
+                <Link href="/faq" className="hover:underline">
                   FAQs
                 </Link>
-                <Link href="#" className="hover:underline">
+                <Link href="/privacy" className="hover:underline">
                   Privacy Policy
                 </Link>
                 <Link href="#" className="flex items-center gap-1">
