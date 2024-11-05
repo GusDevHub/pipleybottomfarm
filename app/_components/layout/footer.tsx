@@ -15,7 +15,7 @@ const Footer = () => {
                 <Link href="/">
                   <Image
                     className="rounded-sm w-24"
-                    src="/logo.png"
+                    src="/logo-white.png"
                     alt="Pipley Bottom Farm"
                     width={201}
                     height={95}
