@@ -22,7 +22,7 @@ const Header = () => {
           <Link href="/">
             <Image
               className="rounded-lg w-32 md:w-48"
-              src="/logo.jpg"
+              src="/logo.png"
               alt="Pipley Bottom Farm"
               width={201}
               height={95}
