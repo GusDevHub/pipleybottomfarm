@@ -11,12 +11,12 @@ const MenuMobile = () => {
 
   const menuItems = [
     { path: "/", label: "Main Page" },
-    { path: "/about", label: "About Us" },
-    { path: "/services", label: "Our Services" },
-    { path: "/products", label: "Our Products" },
+    { path: "/about", label: "About" },
+    { path: "/services", label: "Services" },
+    { path: "/products", label: "Products" },
     { path: "/wildcamping", label: "Wild Camping" },
-    { path: "/blog", label: "Our Blog" },
-    { path: "/contact", label: "Contact Us" },
+    { path: "/blog", label: "Blog" },
+    { path: "/contact", label: "Contact" },
   ];
 
   return (
@@ -35,7 +35,7 @@ const MenuMobile = () => {
         </ul>
         <div className="my-6">
           <Button asChild className="bg-green-600 hover:bg-green-800 font-semibold w-full">
-            <Link href="/book-appointment">Book an appointment now</Link>
+            <Link href="#">Book an appointment now</Link>
           </Button>
         </div>
       </nav>
