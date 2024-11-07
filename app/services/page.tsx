@@ -80,7 +80,7 @@ const ServicesPage = () => {
         <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
           <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
             <Image
-              src="/shepherding.jpg"
+              src="/sheep.jpg"
               fill
               className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
               alt="Shepherding"
