@@ -17,7 +17,7 @@ const ServicesPage = () => {
             />
           </CardHeader>
           <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-            Blade, drill bits, Knife sharpening
+            Blade, drill bits, knife sharpening
           </CardContent>
         </Card>
 
@@ -31,7 +31,7 @@ const ServicesPage = () => {
             />
           </CardHeader>
           <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-            Horse Breeding
+            Horse breeding
           </CardContent>
         </Card>
 
@@ -45,7 +45,7 @@ const ServicesPage = () => {
             />
           </CardHeader>
           <CardContent className="bg-blue-800/85 text-white text-sm md:text-xs text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-            Horse training and Horse driver development
+            Horse training and horse driver development
           </CardContent>
         </Card>
 
@@ -59,7 +59,7 @@ const ServicesPage = () => {
             />
           </CardHeader>
           <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-            Bagot Goat Conservation Breeding
+            Bagot goat conservation breeding
           </CardContent>
         </Card>
 
@@ -73,7 +73,7 @@ const ServicesPage = () => {
             />
           </CardHeader>
           <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-            Agricultural Contracting
+            Agricultural contracting
           </CardContent>
         </Card>
 
@@ -101,7 +101,7 @@ const ServicesPage = () => {
             />
           </CardHeader>
           <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-            Animal and Livestock Husbandry
+            Animal and livestock husbandry
           </CardContent>
         </Card>
 
