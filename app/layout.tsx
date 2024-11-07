@@ -32,9 +32,9 @@ export default function RootLayout({
         className={`bg-white h-full relative ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <div className="flex-1 max-w-screen-lg mx-auto p-5">
+        <section className="flex-1 max-w-screen-lg mx-auto p-5">
           {children}
-        </div>
+        </section>
         <Footer />
       </body>
     </html>
