@@ -1,7 +1,7 @@
 const ServicesPage = () => {
   return (
     <div>
-      <h1 className="font-bold text-green-700">Services</h1>
+      <h1 className="font-bold text-green-700 border-b pb-3">Services</h1>
       <p className="py-3">Blade, drill bits, Knife sharpening</p>
       <p className="py-3">Horse Breeding</p>
       <p className="py-3">Horse training and Horse driver development </p>

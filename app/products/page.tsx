@@ -1,7 +1,7 @@
 const ProductsPage = () => {
   return (
     <div>
-      <h1 className="font-bold text-green-700">Products</h1>
+      <h1 className="font-bold text-green-700 border-b pb-3">Products</h1>
       <p className="py-3">Hay</p>
       <p className="py-3">Straw</p>
       <p className="py-3">Haylage</p>

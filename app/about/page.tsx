@@ -4,7 +4,7 @@ import { Button } from "../_components/ui/button";
 const AboutPage = () => {
   return (
     <div>
-      <h1 className="font-bold text-green-700">About Us</h1>
+      <h1 className="font-bold text-green-700 border-b pb-3">Pipley Bottom Farm</h1>
       <p className="py-3">Local products for Local people</p>
       <p className="py-3">
         A small farm of 42 acres offering agricultural services, livestock

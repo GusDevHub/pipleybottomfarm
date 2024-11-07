@@ -8,7 +8,7 @@ import {
 const FAQPage = () => {
   return (
     <div>
-      <h1 className="font-bold text-green-700">Frequently Asked Questions</h1>
+      <h1 className="font-bold text-green-700 border-b pb-3">Frequently Asked Questions</h1>
       <div className="py-3">
         <Accordion type="single" collapsible>
           <AccordionItem value="item-1">
