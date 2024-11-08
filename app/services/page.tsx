@@ -10,7 +10,7 @@ const ServicesPage = () => {
         <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
           <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
             <Image
-              src="/knife-sharpening.jpg"
+              src="/services/knife-sharpening.jpg"
               fill
               className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
               alt="Blade, drill bits, Knife sharpening"
@@ -24,7 +24,7 @@ const ServicesPage = () => {
         <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
           <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
             <Image
-              src="/horse-breeding.jpg"
+              src="/services/horse-breeding.jpg"
               fill
               className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
               alt="Horse Breeding"
@@ -38,7 +38,7 @@ const ServicesPage = () => {
         <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
           <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
             <Image
-              src="/horse-riding.jpg"
+              src="/services/horse-riding.jpg"
               fill
               className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
               alt="Horse training and Horse driver development"
@@ -52,7 +52,7 @@ const ServicesPage = () => {
         <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
           <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
             <Image
-              src="/bagot-goat.jpg"
+              src="/services/bagot-goat.jpg"
               fill
               className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
               alt="Bagot Goat Conservation Breeding"
@@ -66,7 +66,7 @@ const ServicesPage = () => {
         <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
           <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
             <Image
-              src="/agriculture.jpg"
+              src="/services/agriculture.jpg"
               fill
               className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
               alt="Agricultural Contracting"
@@ -80,7 +80,7 @@ const ServicesPage = () => {
         <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
           <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
             <Image
-              src="/shepherding.jpg"
+              src="/services/shepherding.jpg"
               fill
               className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
               alt="Shepherding"
@@ -94,7 +94,7 @@ const ServicesPage = () => {
         <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
           <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
             <Image
-              src="/live-stock.jpg"
+              src="/services/live-stock.jpg"
               fill
               className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
               alt="Animal and Livestock Husbandry"
@@ -108,7 +108,7 @@ const ServicesPage = () => {
         <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
           <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
             <Image
-              src="/wildcampingAtPipleyBottomFarm.jpg"
+              src="/services/wildcampingAtPipleyBottomFarm.jpg"
               fill
               className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
               alt="Agricultural Contracting"

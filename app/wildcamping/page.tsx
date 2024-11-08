@@ -14,7 +14,7 @@ const WildCampingPage = () => {
       </p>
       <Image
         className="rounded-lg w-full max-w-3xl mt-3"
-        src="/wildcampingAtPipleyBottomFarm.jpg"
+        src="/services/wildcampingAtPipleyBottomFarm.jpg"
         alt="Wild camping"
         width={200}
         height={95}
