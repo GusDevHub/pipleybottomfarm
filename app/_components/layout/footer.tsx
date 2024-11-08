@@ -101,9 +101,9 @@ const Footer = () => {
           </div>
 
           {/* Copyright */}
-          <div className="text-xs text-center pt-10 pb-3">
+          <div className="mx-auto max-w-screen-lg w-full text-xs pt-10 pb-3">
             &copy; 2010 -&nbsp;{new Date().getFullYear()} Copyright
-            <p className="font-bold text-center">Pipley Bottom Farm</p>
+            <p className="font-bold">Pipley Bottom Farm</p>
           </div>
         </CardHeader>
       </Card>
