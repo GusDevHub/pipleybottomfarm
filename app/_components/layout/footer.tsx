@@ -23,7 +23,7 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="flex gap-1">
-                <p className="font-bold text-base text-white">Contact</p>
+                <p className="font-bold text-base text-white">Contacts</p>
               </div>
               <div className="flex items-center justify-start gap-1">
                 <Phone size={12} className="inline-block text-yellow-400" />
@@ -71,9 +71,9 @@ const Footer = () => {
                 <Link href="/wildcamping" className="hover:underline">
                   Wild Camping
                 </Link>
-                <Link href="/blog" className="hover:underline">
+                {/* <Link href="/blog" className="hover:underline">
                   Blog
-                </Link>
+                </Link> */}
                 <Link href="/contact" className="hover:underline">
                   Contact Us
                 </Link>

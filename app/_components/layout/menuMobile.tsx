@@ -15,7 +15,7 @@ const MenuMobile = () => {
     { path: "/services", label: "Services" },
     { path: "/products", label: "Products" },
     { path: "/wildcamping", label: "Wild Camping" },
-    { path: "/blog", label: "Blog" },
+    // { path: "/blog", label: "Blog" },
     { path: "/contact", label: "Contact" },
   ];
 
