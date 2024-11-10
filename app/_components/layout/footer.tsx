@@ -46,8 +46,7 @@ const Footer = () => {
                     href="https://maps.app.goo.gl/mVsvqBjqeCq8pVy3A"
                     target="_blank"
                   >
-                    North Stoke Lane, Upton Cheyney, Bristol <span className="text-nowrap">BS30 6NG</span>, United.
-                    Kingdom
+                    North Stoke Lane, Upton Cheyney, Bristol <span className="text-nowrap">BS30 6NG</span>, United Kingdom
                   </Link>
                 </p>
               </div>
