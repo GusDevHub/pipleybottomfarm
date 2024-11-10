@@ -1,124 +1,27 @@
 import Image from "next/image";
 import { Card, CardContent, CardHeader } from "../_components/ui/card";
+import services from "../_data/services";
 
 const ServicesPage = () => {
   return (
     <div>
       <h1 className="font-bold text-green-700 border-b pb-3">Services</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 w-full">
-        
-        <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
-          <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
-            <Image
-              src="/services/knife-sharpening.jpg"
-              fill
-              className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
-              alt="Blade, drill bits, Knife sharpening"
-            />
-          </CardHeader>
-          <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-            Blade, drill bits, knife sharpening
-          </CardContent>
-        </Card>
-
-        <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
-          <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
-            <Image
-              src="/services/horse-breeding.jpg"
-              fill
-              className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
-              alt="Horse Breeding"
-            />
-          </CardHeader>
-          <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-            Horse breeding
-          </CardContent>
-        </Card>
-
-        <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
-          <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
-            <Image
-              src="/services/horse-riding.jpg"
-              fill
-              className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
-              alt="Horse training and Horse driver development"
-            />
-          </CardHeader>
-          <CardContent className="bg-blue-800/85 text-white text-sm md:text-xs text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-            Horse training and horse driver development
-          </CardContent>
-        </Card>
-
-        <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
-          <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
-            <Image
-              src="/services/bagot-goat.jpg"
-              fill
-              className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
-              alt="Bagot Goat Conservation Breeding"
-            />
-          </CardHeader>
-          <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-            Bagot goat conservation breeding
-          </CardContent>
-        </Card>
-
-        <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
-          <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
-            <Image
-              src="/services/agriculture.jpg"
-              fill
-              className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
-              alt="Agricultural Contracting"
-            />
-          </CardHeader>
-          <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-            Agricultural contracting
-          </CardContent>
-        </Card>
-
-        <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
-          <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
-            <Image
-              src="/services/shepherding.jpg"
-              fill
-              className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
-              alt="Shepherding"
-            />
-          </CardHeader>
-          <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-            Shepherding
-          </CardContent>
-        </Card>
-
-        <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
-          <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
-            <Image
-              src="/services/live-stock.jpg"
-              fill
-              className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
-              alt="Animal and Livestock Husbandry"
-            />
-          </CardHeader>
-          <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-            Animal and livestock husbandry
-          </CardContent>
-        </Card>
-
-        <Card className="relative border-transparent w-full max-w-96 overflow-hidden">
-          <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
-            <Image
-              src="/services/wildcampingAtPipleyBottomFarm.jpg"
-              fill
-              className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
-              alt="Agricultural Contracting"
-            />
-          </CardHeader>
-          <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-           Wild camping and almost wild camping
-          </CardContent>
-        </Card>
-
+        {services.map((service) => (
+          <Card key={service.name} className="relative border-transparent w-full max-w-96 overflow-hidden">
+            <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
+              <Image
+                src={service.image}
+                fill
+                className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
+                alt={service.alt}
+              />
+            </CardHeader>
+            <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
+              {service.name}
+            </CardContent>
+          </Card>
+        ))}
       </div>
     </div>
   );

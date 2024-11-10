@@ -23,7 +23,7 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="flex gap-1">
-                <p className="font-bold text-base text-white">Contacts</p>
+                <p><span className="font-bold text-base text-white">Contact us</span> &mdash; Open from 8:00 AM to 5:00 PM</p>
               </div>
               <div className="flex items-center justify-start gap-1">
                 <Phone size={12} className="inline-block text-yellow-400" />
@@ -46,7 +46,7 @@ const Footer = () => {
                     href="https://maps.app.goo.gl/mVsvqBjqeCq8pVy3A"
                     target="_blank"
                   >
-                    North Stoke Lane, Upton Cheyney, Bristol <span className="text-nowrap">BS30 6NG</span>, United Kingdom
+                    North Stoke Lane, Upton Cheyney, Bristol <span className="text-nowrap">BS30 6NG</span>, United Kingdom.
                   </Link>
                 </p>
               </div>
@@ -92,7 +92,6 @@ const Footer = () => {
                   Privacy Policy
                 </Link>
                 <Link href="#" className="flex items-center gap-1">
-                  <span>Restrict Area</span>
                   <LockKeyhole className="w-5 h-5 border border-muted/70 rounded-2xl p-1" />
                 </Link>
               </div>
