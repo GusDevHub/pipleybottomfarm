@@ -17,7 +17,7 @@ const ServicesPage = () => {
                 alt={service.alt}
               />
             </CardHeader>
-            <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
+            <CardContent className="bg-blue-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-10 relative z-10">
               {service.name}
             </CardContent>
           </Card>
