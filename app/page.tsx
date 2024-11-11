@@ -48,7 +48,7 @@ export default function Home() {
           </h3>
           <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
             {services.map((service) => (
-              <Link href="/products" key={service.name}>
+              <Link href="/services" key={service.name}>
                 <Card
                   className="relative min-w-[348px] rounded-2xl max-w-96 overflow-hidden"
                 >
