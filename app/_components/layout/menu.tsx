@@ -9,8 +9,8 @@ const MenuGeneral = () => {
 
   const menuItems = [
     { path: "/about", label: "About" },
-    { path: "/services", label: "Services" },
     { path: "/products", label: "Products" },
+    { path: "/services", label: "Services" },
     { path: "/wildcamping", label: "Wild Camping" },
     // { path: "/blog", label: "Blog" },
     { path: "/contact", label: "Contact" },

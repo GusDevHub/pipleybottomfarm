@@ -12,8 +12,8 @@ const MenuMobile = () => {
   const menuItems = [
     { path: "/", label: "Main Page" },
     { path: "/about", label: "About" },
-    { path: "/services", label: "Services" },
     { path: "/products", label: "Products" },
+    { path: "/services", label: "Services" },
     { path: "/wildcamping", label: "Wild Camping" },
     // { path: "/blog", label: "Blog" },
     { path: "/contact", label: "Contact" },

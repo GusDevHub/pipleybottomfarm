@@ -61,11 +61,11 @@ const Footer = () => {
                 <Link href="/about" className="hover:underline">
                   Pipley Bottom Farm
                 </Link>
-                <Link href="/services" className="hover:underline">
-                  Services
-                </Link>
                 <Link href="/products" className="hover:underline">
                   Products
+                </Link>
+                <Link href="/services" className="hover:underline">
+                  Services
                 </Link>
                 <Link href="/wildcamping" className="hover:underline">
                   Wild Camping

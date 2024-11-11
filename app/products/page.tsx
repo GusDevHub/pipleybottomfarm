@@ -42,7 +42,7 @@ const ProductsPage = () => {
                 alt={product.alt}
               />
               <CardTitle className="absolute left-2 bottom-2 w-full pr-4">
-                <div className="flex items-center justify-center gap-1 mx-auto">
+                <div className="flex items-center justify-center gap-1">
                 {product.stock && (
                   <Badge
                     className={`text-white w-fit ${
