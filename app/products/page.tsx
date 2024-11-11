@@ -9,7 +9,9 @@ import products from "../_data/products";
 import { Badge } from "../_components/ui/badge";
 import Link from "next/link";
 
-const getStockStatus = (stock) => {
+type StockStatus = 1 | 2 | 3 | undefined;
+
+const getStockStatus = (stock: StockStatus) => {
   switch (stock) {
     case 1:
       return { text: "Available", style: "bg-green-500" };
