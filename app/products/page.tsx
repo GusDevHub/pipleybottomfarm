@@ -32,7 +32,7 @@ const ProductsPage = () => {
         {products.map((product) => (
           <Card
             key={product.name}
-            className="relative border-transparent w-full max-w-96 overflow-hidden"
+            className="relative w-full max-w-96 overflow-hidden"
           >
             <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
               <Image
@@ -41,8 +41,8 @@ const ProductsPage = () => {
                 className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
                 alt={product.alt}
               />
-              <CardTitle className="absolute left-2 top-1">
-                <div className="flex flex-col items-start gap-1">
+              <CardTitle className="absolute left-2 bottom-2 w-full pr-4">
+                <div className="flex items-center justify-center gap-1 mx-auto">
                 {product.stock && (
                   <Badge
                     className={`text-white w-fit ${
@@ -72,7 +72,7 @@ const ProductsPage = () => {
                 </div>
               </CardTitle>
             </CardHeader>
-            <CardContent className="bg-green-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
+            <CardContent className="bg-green-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-10 relative z-10">
               {product.name}
             </CardContent>
           </Card>

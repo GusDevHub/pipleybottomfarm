@@ -17,7 +17,7 @@ const products = [
     },
     {
       name: 'Haylage',
-      price: 'Contact us',
+      price: 'Request availability info',
       stock: 3,
       link: '/contact',
       image: '/products/haylage.jpg',
@@ -57,7 +57,7 @@ const products = [
     },
     {
       name: 'Day old ducklings/chicks',
-      price: 'Contact us',
+      price: 'Request availability info',
       stock: 3,
       link: '/contact',
       image: '/products/duckling-chick.jpg',
@@ -65,7 +65,7 @@ const products = [
     },
     {
       name: 'Young Waterfowl',
-      price: 'Contact us',
+      price: 'Request availability info',
       stock: 3,
       link: '/contact',
       image: '/products/young-waterfowl.jpg',
@@ -73,7 +73,7 @@ const products = [
     },
     {
       name: 'Apples',
-      price: 'Contact us',
+      price: 'Request availability info',
       stock: 3,
       link: '/contact',
       image: '/products/apples.jpg',
@@ -81,7 +81,7 @@ const products = [
     },
     {
       name: 'Pears',
-      price: 'Contact us',
+      price: 'Request availability info',
       stock: 3,
       link: '/contact',
       image: '/products/pears.jpg',
@@ -89,7 +89,7 @@ const products = [
     },
     {
       name: 'Gages, plums, damsons',
-      price: 'Contact us',
+      price: 'Request availability info',
       stock: 3,
       link: '/contact',
       image: '/products/plums.jpg',
@@ -97,7 +97,7 @@ const products = [
     },
     {
       name: 'Cherries',
-      price: 'Contact us',
+      price: 'Request availability info',
       stock: 3,
       link: '/contact',
       image: '/products/cherries.jpg',
@@ -105,7 +105,7 @@ const products = [
     },
     {
       name: 'Nuts',
-      price: 'Contact us',
+      price: 'Request availability info',
       stock: 3,
       link: '/contact',
       image: '/products/nuts.jpg',
@@ -113,7 +113,7 @@ const products = [
     },
     {
       name: 'Hedgerow fruit',
-      price: 'Contact us',
+      price: 'Request availability info',
       stock: 3,
       link: '/contact',
       image: '/products/hedgerow-fruits.jpg',
@@ -121,7 +121,7 @@ const products = [
     },
     {
       name: 'British saanen goats cheese',
-      price: 'Contact us',
+      price: 'Request availability info',
       stock: 3,
       link: '/contact',
       image: '/products/goat-cheese.jpg',
