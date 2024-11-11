@@ -9,7 +9,7 @@ import products from "../_data/products";
 import { Badge } from "../_components/ui/badge";
 import Link from "next/link";
 
-type StockStatus = 1 | 2 | 3 | undefined;
+type StockStatus = number | undefined;
 
 const getStockStatus = (stock: StockStatus) => {
   switch (stock) {
