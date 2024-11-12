@@ -27,21 +27,21 @@ import {
 
 type StockStatus = number | undefined;
 
-type ProductType = {
-  name: string;
-  price: string;
-};
+// type ProductType = {
+//   name: string;
+//   price: string;
+// };
 
-type Product = {
-  name: string;
-  price: string;
-  stock: StockStatus;
-  link?: string;
-  image: string;
-  alt: string;
-  type?: ProductType[];
-  description?: string;
-};
+// type Product = {
+//   name: string;
+//   price: string;
+//   stock: StockStatus;
+//   link?: string;
+//   image: string;
+//   alt: string;
+//   type?: ProductType[];
+//   description?: string;
+// };
 
 const getStockStatus = (stock: StockStatus) => {
   switch (stock) {
