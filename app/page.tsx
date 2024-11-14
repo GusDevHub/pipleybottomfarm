@@ -66,7 +66,7 @@ export default function Home() {
         <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
           Wild Camping
         </h3>
-        <div className="relative w-full min-h-28">
+        <div className="relative w-full min-h-60">
           <Link href="wildcamping">
             <Image
               src="/services/wildcampingAtPipleyBottomFarm.jpg"
@@ -84,7 +84,7 @@ export default function Home() {
         <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
           About us
         </h3>
-        <div className="relative w-full min-h-28">
+        <div className="relative w-full min-h-60">
           <Link href="about">
             <Image
               src="/farmview.jpg"
