@@ -20,7 +20,7 @@ export default function Home() {
           <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
             {products.map((product) => (
               <Link href="/products" key={product.name}>
-                <Card className="relative min-w-[167px] rounded-2xl max-w-96 overflow-hidden">
+                <Card className="relative min-w-[167px] rounded-lg max-w-96 overflow-hidden">
                   <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
                     <Image
                       src={product.image}
@@ -44,12 +44,12 @@ export default function Home() {
           <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
             {services.map((service) => (
               <Link href="/services" key={service.name}>
-                <Card className="relative min-w-[348px] rounded-2xl max-w-96 overflow-hidden">
-                  <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
+                <Card className="relative min-w-[348px] rounded-lg max-w-96 overflow-hidden">
+                  <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-sm z-0">
                     <Image
                       src={service.image}
                       fill
-                      className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
+                      className="object-cover rounded-sm hover:scale-110 hover:duration-300 duration-500"
                       alt={service.alt}
                     />
                   </CardHeader>
@@ -60,6 +60,41 @@ export default function Home() {
               </Link>
             ))}
           </div>
+        </div>
+      </div>
+      <div className="my-4">
+        <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
+          Wild Camping
+        </h3>
+        <div className="relative w-full min-h-28">
+          <Link href="wildcamping">
+            <Image
+              src="/services/wildcampingAtPipleyBottomFarm.jpg"
+              alt="Wild Camping"
+              fill
+              objectFit="cover"
+              objectPosition="center"
+              className="absolute w-full rounded-lg"
+            />
+          </Link>
+        </div>
+      </div>
+
+      <div className="my-4">
+        <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
+          About us
+        </h3>
+        <div className="relative w-full min-h-28">
+          <Link href="about">
+            <Image
+              src="/farmview.jpg"
+              alt="Pipley Bottom Farm"
+              fill
+              objectFit="cover"
+              objectPosition="center"
+              className="absolute w-full rounded-lg"
+            />
+          </Link>
         </div>
       </div>
     </>
