@@ -34,7 +34,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="px-2 pb-3">
-                      <h2 className="mt-2 overflow-hidden text-ellipsis text-nowrap text-sm text-center text-green-800 font-bold">
+                      <h2 className="mt-2 overflow-hidden text-ellipsis text-nowrap text-sm text-center text-green-800 font-semibold">
                         {product.name}
                       </h2>
                     </div>
@@ -65,7 +65,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="px-2 pb-3">
-                      <h2 className="mt-2 overflow-hidden text-ellipsis text-nowrap text-sm text-center text-blue-800 font-bold">
+                      <h2 className="mt-2 overflow-hidden text-ellipsis text-nowrap text-sm text-center text-blue-800 font-semibold">
                         {service.name}
                       </h2>
                     </div>

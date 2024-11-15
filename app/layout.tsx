@@ -1,19 +1,10 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/layout/header";
 import Footer from "./_components/layout/footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Pipley Bottom Farm",
@@ -29,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-blue-950">
       <body
-        className={`bg-white h-full relative ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`bg-white h-full relative ${inter.className} antialiased`}
       >
         <Header />
         <section className="flex-1 max-w-screen-lg mx-auto p-5">
