@@ -42,7 +42,7 @@ const MenuMobile = () => {
                   className="flex items-center justify-start w-full gap-2 p-3"
                   aria-current={isActive(path) ? "page" : undefined}
                 >
-                  {label}{" "}
+                  {label}
                   {label === "Products" && (
                     <Badge className="bg-gray-200 hover:bg-gray-200 hover:text-black text-black text-[10px]">
                       {products.length}
