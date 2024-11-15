@@ -47,7 +47,7 @@ const Header = () => {
             <SheetContent className="w-[70%] sm:invisible overflow-y-auto [&::-webkit-scrollbar]:hidden">
               <SheetHeader>
                 <SheetTitle>
-                  <SheetClose className="w-full">
+                  <SheetClose className="w-full" asChild>
                     <Link href="/" className="block w-fit">
                       <Image
                         className="w-24 md:w-48"
