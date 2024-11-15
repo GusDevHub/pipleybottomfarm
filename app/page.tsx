@@ -37,13 +37,12 @@ export default function Home() {
                         className="rounded-t-xl rounded-b-sm"
                       />
                       <div className="absolute top-2 right-2 z-10">
-                        {product.type?.length > 1 ? (
+                        {(product.type?.length ?? 0) > 1 ? (
                           <Badge
                             variant="secondary"
                             className="bg-green-800/85 hover:bg-green-800/85 text-[10px] text-white"
                           >
-                            {product.type?.length}{" "}
-                            {product.type?.length > 1 ? "types" : ""}
+                            {product.type?.length} types
                           </Badge>
                         ) : (
                           ""
