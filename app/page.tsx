@@ -17,7 +17,7 @@ export default function Home() {
         </div>
         <div className="my-4">
           <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
-            Our products
+            Our products ({products.length})
           </h3>
           <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
             {products.map((product) => (
@@ -48,7 +48,7 @@ export default function Home() {
         </div>
         <div className="mt-6 mb-4">
           <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
-            Our services
+            Our services ({services.length})
           </h3>
           <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
             {services.map((service) => (
