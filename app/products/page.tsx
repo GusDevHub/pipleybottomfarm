@@ -1,12 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "../_components/ui/card";
+import { Card, CardContent } from "../_components/ui/card";
 import products from "../_data/products";
 import { Badge } from "../_components/ui/badge";
 import Link from "next/link";
