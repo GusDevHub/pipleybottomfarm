@@ -52,30 +52,23 @@ const ProductsPage = () => {
   const [currentProductIndex, setCurrentProductIndex] = useState<number | null>(
     null
   );
-  const [isAtBottom, setIsAtBottom] = useState(false);
 
   // Go to the previous product
   const goToPreviousProduct = () => {
-    if (currentProductIndex === null) return;
-    setCurrentProductIndex((prevIndex) =>
-      prevIndex > 0 ? prevIndex - 1 : products.length - 1
-    );
+    if (currentProductIndex === null) return; // Guard clause for null
+    setCurrentProductIndex((prevIndex) => {
+      if (prevIndex === null) return null; // Explicitly check for null
+      return prevIndex > 0 ? prevIndex - 1 : products.length - 1;
+    });
   };
 
   // Go to the next product
   const goToNextProduct = () => {
-    if (currentProductIndex === null) return;
-    setCurrentProductIndex((prevIndex) =>
-      prevIndex < products.length - 1 ? prevIndex + 1 : 0
-    );
-  };
-
-  // Scroll handler to check if we're at the bottom
-  const handleScroll = (e: React.UIEvent<HTMLElement>) => {
-    const bottom =
-      e.currentTarget.scrollHeight ===
-      e.currentTarget.scrollTop + e.currentTarget.clientHeight;
-    setIsAtBottom(bottom);
+    if (currentProductIndex === null) return; // Guard clause for null
+    setCurrentProductIndex((prevIndex) => {
+      if (prevIndex === null) return null; // Explicitly check for null
+      return prevIndex < products.length - 1 ? prevIndex + 1 : 0;
+    });
   };
 
   return (
@@ -182,10 +175,7 @@ const ProductsPage = () => {
                   <DialogDescription>{product.description}</DialogDescription>
                 )}
               </DialogHeader>
-              <ScrollArea
-                className="max-h-[135px] relative"
-                onScroll={handleScroll}
-              >
+              <ScrollArea className="max-h-[135px] relative">
                 <div>
                   {product.type && (
                     <Table>
@@ -223,7 +213,7 @@ const ProductsPage = () => {
                     </Table>
                   )}
                 </div>
-                {!isAtBottom && product.type && product.type.length > 1 && (
+                {product.type && product.type.length > 1 && (
                   <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white via-transparent to-transparent rounded-b-lg">
                     <div className="flex justify-center items-baseline h-full pt-4 text-gray-500/25">
                       <LucideArrowBigDown
