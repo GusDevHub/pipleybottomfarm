@@ -204,7 +204,7 @@ const ProductsPage = () => {
                                 {type.price.startsWith("Contact") ? (
                                   <Link
                                     href="/contact"
-                                    className="text-blue-500 underline"
+                                    className="text-blue-500 underline text-nowrap"
                                   >
                                     Contact for price
                                   </Link>
