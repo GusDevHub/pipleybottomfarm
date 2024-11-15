@@ -1,6 +1,6 @@
 import DateDisplay from "./_components/date-display";
 import products from "./_data/products";
-import { Card, CardContent, CardHeader } from "./_components/ui/card";
+import { Card, CardContent } from "./_components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import services from "./_data/services";
