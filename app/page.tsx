@@ -17,7 +17,7 @@ export default function Home() {
           <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
             Our products
           </h3>
-          <div className="flex gap-4 overflow-x-auto [&::-webkit-scrollbar]:hidden">
+          <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
             {products.map((product) => (
               <Link href="/products" key={product.name}>
                 <Card className="min-w-[167px] max-w-28 rounded-2xl bg-gray-100">
