@@ -4,6 +4,7 @@ import { Card, CardContent } from "./_components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import services from "./_data/services";
+import { Badge } from "./_components/ui/badge";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
           </h2>
           <DateDisplay />
         </div>
+
         <div className="my-4">
           <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
             Our products ({products.length})
@@ -34,6 +36,19 @@ export default function Home() {
                         fill
                         className="rounded-t-xl rounded-b-sm"
                       />
+                      <div className="absolute top-2 right-2 z-10">
+                        {product.type?.length > 1 ? (
+                          <Badge
+                            variant="secondary"
+                            className="bg-green-800/85 hover:bg-green-800/85 text-[10px] text-white"
+                          >
+                            {product.type?.length}{" "}
+                            {product.type?.length > 1 ? "types" : ""}
+                          </Badge>
+                        ) : (
+                          ""
+                        )}
+                      </div>
                     </div>
                     <div className="px-2 pb-3">
                       <h2 className="mt-2 overflow-hidden text-ellipsis text-nowrap text-sm text-center text-green-800 font-semibold">
@@ -46,6 +61,7 @@ export default function Home() {
             ))}
           </div>
         </div>
+
         <div className="mt-6 mb-4">
           <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
             Our services ({services.length})
@@ -78,6 +94,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="mt-6 mb-4">
         <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
           About us
