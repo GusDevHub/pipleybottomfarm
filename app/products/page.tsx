@@ -149,7 +149,7 @@ const ProductsPage = () => {
             <DialogContent className="max-h-[600px] gap-0">
               <DialogHeader>
                 <DialogTitle>
-                  <div className="relative w-full mt-4 mb-8 h-28">
+                  <div className="relative w-full mt-4 mb-8 h-40">
                     <Image
                       src={product.image}
                       alt={product.name}
@@ -171,16 +171,28 @@ const ProductsPage = () => {
                       />
                     </div>
                   </div>
-                  {product.name}
-                  {product.stock && (
-                    <Badge
-                      className={`text-white w-fit ml-3 ${
-                        getStockStatus(product.stock).style
-                      } hover:${getStockStatus(product.stock).style}`}
-                    >
-                      {getStockStatus(product.stock).text}
-                    </Badge>
-                  )}
+                  <div className="flex items-center justify-center gap-2">
+                    {product.name}
+                    {(product.type?.length ?? 0) > 1 ? (
+                      <Badge
+                        variant="secondary"
+                        className="bg-green-800/85 hover:bg-green-800/85  text-white"
+                      >
+                        {product.type?.length} types
+                      </Badge>
+                    ) : (
+                      ""
+                    )}
+                    {product.stock && (
+                      <Badge
+                        className={`text-white w-fit ${
+                          getStockStatus(product.stock).style
+                        } hover:${getStockStatus(product.stock).style}`}
+                      >
+                        {getStockStatus(product.stock).text}
+                      </Badge>
+                    )}
+                  </div>
                 </DialogTitle>
                 {product.description && (
                   <DialogDescription>{product.description}</DialogDescription>
@@ -191,7 +203,7 @@ const ProductsPage = () => {
                   <TableHeader>
                     <TableRow>
                       <TableHead className="w-[250] font-bold">
-                        Product Name
+                        Product Type Name
                       </TableHead>
                       <TableHead className="text-right font-bold">
                         Price
