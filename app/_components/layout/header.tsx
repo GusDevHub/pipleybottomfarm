@@ -46,8 +46,16 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent className="w-[70%] sm:invisible overflow-y-auto [&::-webkit-scrollbar]:hidden">
               <SheetHeader>
-                <SheetTitle className="text-xs text-left opacity-45 pl-3 uppercase">
-                  Navigation
+                <SheetTitle>
+                  <Link href="/" className="block w-fit">
+                    <Image
+                      className="w-24 md:w-48"
+                      src="/logo.png"
+                      alt="Pipley Bottom Farm"
+                      width={201}
+                      height={95}
+                    />
+                  </Link>
                 </SheetTitle>
               </SheetHeader>
               <SheetClose asChild>
