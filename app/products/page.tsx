@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import {
   Card,
@@ -17,6 +19,12 @@ import {
   DialogTrigger,
 } from "../_components/ui/dialog";
 import {
+  CircleArrowLeft,
+  CircleArrowRight,
+  LucideArrowBigDown,
+} from "lucide-react";
+import { ScrollArea } from "../_components/ui/scroll-area";
+import {
   Table,
   TableBody,
   TableCell,
@@ -26,22 +34,6 @@ import {
 } from "../_components/ui/table";
 
 type StockStatus = number | undefined;
-
-// type ProductType = {
-//   name: string;
-//   price: string;
-// };
-
-// type Product = {
-//   name: string;
-//   price: string;
-//   stock: StockStatus;
-//   link?: string;
-//   image: string;
-//   alt: string;
-//   type?: ProductType[];
-//   description?: string;
-// };
 
 const getStockStatus = (stock: StockStatus) => {
   switch (stock) {
@@ -57,13 +49,50 @@ const getStockStatus = (stock: StockStatus) => {
 };
 
 const ProductsPage = () => {
+  const [currentProductIndex, setCurrentProductIndex] = useState<number | null>(
+    null
+  );
+  const [isAtBottom, setIsAtBottom] = useState(false);
+
+  // Go to the previous product
+  const goToPreviousProduct = () => {
+    if (currentProductIndex === null) return;
+    setCurrentProductIndex((prevIndex) =>
+      prevIndex > 0 ? prevIndex - 1 : products.length - 1
+    );
+  };
+
+  // Go to the next product
+  const goToNextProduct = () => {
+    if (currentProductIndex === null) return;
+    setCurrentProductIndex((prevIndex) =>
+      prevIndex < products.length - 1 ? prevIndex + 1 : 0
+    );
+  };
+
+  // Scroll handler to check if we're at the bottom
+  const handleScroll = (e: React.UIEvent<HTMLElement>) => {
+    const bottom =
+      e.currentTarget.scrollHeight ===
+      e.currentTarget.scrollTop + e.currentTarget.clientHeight;
+    setIsAtBottom(bottom);
+  };
+
   return (
     <div>
       <h1 className="font-bold text-green-700 border-b pb-3">Products</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 w-full">
-        {products.map((product) => (
-          <Dialog key={product.name}>
-            <DialogTrigger>
+        {products.map((product, index) => (
+          <Dialog
+            key={product.name}
+            open={currentProductIndex === index}
+            onOpenChange={(isOpen) => {
+              if (!isOpen) {
+                setCurrentProductIndex(null);
+              }
+            }}
+          >
+            <DialogTrigger onClick={() => setCurrentProductIndex(index)}>
               <Card className="relative w-full max-w-96 overflow-hidden">
                 <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
                   <Image
@@ -112,9 +141,32 @@ const ProductsPage = () => {
                 </CardContent>
               </Card>
             </DialogTrigger>
-            <DialogContent>
+
+            <DialogContent className="max-h-[600px]">
               <DialogHeader>
                 <DialogTitle>
+                  <div className="relative w-full mt-4 mb-8 h-28">
+                    <Image
+                      src={product.image}
+                      alt={product.name}
+                      fill
+                      objectFit="cover"
+                      objectPosition="center"
+                      className="absolute w-full rounded-sm"
+                    />
+                    <div className="flex items-center justify-between absolute -bottom-5 right-2 px-3 py-1 gap-4 bg-blue-700/75 rounded-full">
+                      <CircleArrowLeft
+                        size={35}
+                        className="text-white hover:text-yellow-300 cursor-pointer stroke-1"
+                        onClick={goToPreviousProduct}
+                      />
+                      <CircleArrowRight
+                        size={35}
+                        className="text-white hover:text-yellow-300 cursor-pointer stroke-1"
+                        onClick={goToNextProduct}
+                      />
+                    </div>
+                  </div>
                   {product.name}
                   {product.stock && (
                     <Badge
@@ -130,33 +182,58 @@ const ProductsPage = () => {
                   <DialogDescription>{product.description}</DialogDescription>
                 )}
               </DialogHeader>
-              <div>
-                {product.type && (
-                  <Table>
-                    <TableHeader>
-                      <TableRow>
-                        <TableHead className="w-[250]">Product Name</TableHead>
-                        <TableHead className="text-right">Price</TableHead>
-                      </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                      {product.type.map((type) => (
-                        <TableRow key={type.name}>
-                          <TableCell className="font-medium">
-                            {type.name}
-                          </TableCell>
-                          <TableCell className="text-right">
-                            {type.price.startsWith("Contact") ? (
-                              <Link href="/contact" className="text-blue-500 underline">Contact for price</Link>
-                            ) : (<span className="text-green-600 font-medium">{type.price}</span>
-                            )}
-                          </TableCell>
+              <ScrollArea
+                className="max-h-[135px] relative"
+                onScroll={handleScroll}
+              >
+                <div>
+                  {product.type && (
+                    <Table>
+                      <TableHeader>
+                        <TableRow>
+                          <TableHead className="w-[250]">
+                            Product Name
+                          </TableHead>
+                          <TableHead className="text-right">Price</TableHead>
                         </TableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
+                      </TableHeader>
+                      <TableBody>
+                        {product.type.map((type) => (
+                          <TableRow key={type.name}>
+                            <TableCell className="font-medium">
+                              {type.name}
+                            </TableCell>
+                            <TableCell className="text-right">
+                              {type.price.startsWith("Contact") ? (
+                                <Link
+                                  href="/contact"
+                                  className="text-blue-500 underline"
+                                >
+                                  Contact for price
+                                </Link>
+                              ) : (
+                                <span className="text-green-600 font-medium">
+                                  {type.price}
+                                </span>
+                              )}
+                            </TableCell>
+                          </TableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  )}
+                </div>
+                {!isAtBottom && product.type && product.type.length > 1 && (
+                  <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white via-transparent to-transparent rounded-b-lg">
+                    <div className="flex justify-center items-baseline h-full pt-4 text-gray-500/25">
+                      <LucideArrowBigDown
+                        fill="white"
+                        className="animate-bounce"
+                      />
+                    </div>
+                  </div>
                 )}
-              </div>
+              </ScrollArea>
             </DialogContent>
           </Dialog>
         ))}
