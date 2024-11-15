@@ -135,7 +135,7 @@ const ProductsPage = () => {
               </Card>
             </DialogTrigger>
 
-            <DialogContent className="max-h-[600px]">
+            <DialogContent className="max-h-[600px] gap-0">
               <DialogHeader>
                 <DialogTitle>
                   <div className="relative w-full mt-4 mb-8 h-28">
@@ -175,54 +175,65 @@ const ProductsPage = () => {
                   <DialogDescription>{product.description}</DialogDescription>
                 )}
               </DialogHeader>
-              <ScrollArea className="max-h-[135px] relative">
+              {product.type && (
+                <Table className="py-0 my-0">
+                  <TableHeader>
+                    <TableRow>
+                      <TableHead className="w-[250] font-bold">
+                        Product Name
+                      </TableHead>
+                      <TableHead className="text-right font-bold">
+                        Price
+                      </TableHead>
+                    </TableRow>
+                  </TableHeader>
+                </Table>
+              )}
+              <ScrollArea className="max-h-[185px] relative">
                 <div>
                   {product.type && (
-                    <Table>
-                      <TableHeader>
-                        <TableRow>
-                          <TableHead className="w-[250]">
-                            Product Name
-                          </TableHead>
-                          <TableHead className="text-right">Price</TableHead>
-                        </TableRow>
-                      </TableHeader>
-                      <TableBody>
-                        {product.type.map((type) => (
-                          <TableRow key={type.name}>
-                            <TableCell className="font-medium">
-                              {type.name}
-                            </TableCell>
-                            <TableCell className="text-right">
-                              {type.price.startsWith("Contact") ? (
-                                <Link
-                                  href="/contact"
-                                  className="text-blue-500 underline"
-                                >
-                                  Contact for price
-                                </Link>
-                              ) : (
-                                <span className="text-green-600 font-medium">
-                                  {type.price}
-                                </span>
-                              )}
-                            </TableCell>
-                          </TableRow>
-                        ))}
-                      </TableBody>
-                    </Table>
+                    <>
+                      <Table className="py-0 my-0">
+                        <TableBody>
+                          {product.type.map((type) => (
+                            <TableRow key={type.name}>
+                              <TableCell className="font-medium">
+                                {type.name}
+                              </TableCell>
+                              <TableCell className="text-right">
+                                {type.price.startsWith("Contact") ? (
+                                  <Link
+                                    href="/contact"
+                                    className="text-blue-500 underline"
+                                  >
+                                    Contact for price
+                                  </Link>
+                                ) : (
+                                  <span className="text-green-600 font-medium">
+                                    {type.price}
+                                  </span>
+                                )}
+                              </TableCell>
+                            </TableRow>
+                          ))}
+                        </TableBody>
+                      </Table>
+                      {product.type && product.type.length > 3 && (
+                        <div className="mb-8"></div>
+                      )}
+                    </>
                   )}
                 </div>
-                {product.type && product.type.length > 1 && (
-                  <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white via-transparent to-transparent rounded-b-lg">
+                <div className="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white via-transparent to-transparent rounded-b-lg">
+                  {product.type && product.type.length > 3 && (
                     <div className="flex justify-center items-baseline h-full pt-4 text-gray-500/25">
                       <LucideArrowBigDown
                         fill="white"
                         className="animate-bounce"
                       />
                     </div>
-                  </div>
-                )}
+                  )}
+                </div>
               </ScrollArea>
             </DialogContent>
           </Dialog>
