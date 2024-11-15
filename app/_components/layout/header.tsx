@@ -12,6 +12,7 @@ import {
 } from "../ui/sheet";
 import MenuGeneral from "./menu";
 import MenuMobile from "./menuMobile";
+import { Button } from "../ui/button";
 
 const Header = () => {
   return (
@@ -39,7 +40,9 @@ const Header = () => {
           {/* Mobile Menu Button (hidden on larger screens) */}
           <Sheet>
             <SheetTrigger className="md:hidden text-blue-800 mr-3">
-              <MenuIcon size={24} />
+              <Button variant="outline" size="icon">
+                <MenuIcon size={16} />
+              </Button>
             </SheetTrigger>
             <SheetContent className="w-[70%] sm:invisible overflow-y-auto [&::-webkit-scrollbar]:hidden">
               <SheetHeader>

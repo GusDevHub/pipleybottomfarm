@@ -10,7 +10,9 @@ export default function Home() {
     <>
       <div className="mx-auto max-w-screen-lg">
         <div>
-          <h2 className="text-green-800 font-semibold">Welcome</h2>
+          <h2 className="text-sm text-green-800 font-semibold">
+            Welcome back!
+          </h2>
           <DateDisplay />
         </div>
         <div className="my-4">
