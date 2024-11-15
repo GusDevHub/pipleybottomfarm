@@ -86,26 +86,45 @@ const ProductsPage = () => {
             }}
           >
             <DialogTrigger onClick={() => setCurrentProductIndex(index)}>
-              <Card className="relative w-full max-w-96 overflow-hidden">
-                <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
-                  <Image
-                    src={product.image}
-                    fill
-                    className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
-                    alt={product.alt}
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                  />
-                  <CardTitle className="absolute left-2 bottom-2 w-full pr-4">
-                    <div className="flex items-center justify-center gap-1">
+              <Card className="min-w-[167px] max-w-md rounded-2xl bg-gray-100">
+                <CardContent className="px-1 py-0 pt-1">
+                  <div className="w-full h-[159px] relative">
+                    <Image
+                      alt={product.name}
+                      src={product.image}
+                      style={{
+                        objectFit: "cover",
+                      }}
+                      fill
+                      className="rounded-t-xl rounded-b-sm"
+                    />
+                    <div className="absolute top-2 right-2 z-10">
+                      {(product.type?.length ?? 0) > 1 ? (
+                        <Badge
+                          variant="secondary"
+                          className="bg-green-800/85 hover:bg-green-800/85 text-[10px] text-white"
+                        >
+                          {product.type?.length} types
+                        </Badge>
+                      ) : (
+                        ""
+                      )}
                       {product.stock && (
                         <Badge
-                          className={`text-white w-fit ${
+                          className={`text-white text-[10px] w-fit ml-2 ${
                             getStockStatus(product.stock).style
                           } hover:${getStockStatus(product.stock).style}`}
                         >
                           {getStockStatus(product.stock).text}
                         </Badge>
                       )}
+                    </div>
+                  </div>
+                  <div className="px-2 pb-3">
+                    <h2 className="mt-2 overflow-hidden text-ellipsis text-nowrap text-base text-left text-green-800 font-semibold">
+                      {product.name}
+                    </h2>
+                    <div className="flex items-center justify-center gap-3 w-fit py-2">
                       {product.price && (
                         <Badge
                           className={`w-fit ${
@@ -127,10 +146,7 @@ const ProductsPage = () => {
                         </Badge>
                       )}
                     </div>
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="bg-green-800/85 text-white text-sm text-center font-semibold py-2 mt-32 mb-10 relative z-10">
-                  {product.name}
+                  </div>
                 </CardContent>
               </Card>
             </DialogTrigger>
