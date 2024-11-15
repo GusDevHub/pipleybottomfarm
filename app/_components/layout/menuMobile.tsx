@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"; // Import usePathname
 import { Badge } from "../ui/badge";
 import products from "@/app/_data/products";
 import services from "@/app/_data/services";
+import { CalendarDays } from "lucide-react";
 
 const MenuMobile = () => {
   const pathname = usePathname(); // Get the current pathname
@@ -38,7 +39,7 @@ const MenuMobile = () => {
               <SheetClose asChild>
                 <Link
                   href={path}
-                  className="w-full block p-3"
+                  className="flex items-center justify-start w-full gap-2 p-3"
                   aria-current={isActive(path) ? "page" : undefined}
                 >
                   {label}{" "}
@@ -62,7 +63,9 @@ const MenuMobile = () => {
             asChild
             className="bg-green-600 hover:bg-green-800 font-semibold w-full"
           >
-            <Link href="#">Book an appointment now</Link>
+            <Link href="#">
+              <CalendarDays /> Book an appointment
+            </Link>
           </Button>
         </div>
       </nav>
