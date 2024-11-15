@@ -17,44 +17,58 @@ export default function Home() {
           <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
             Our products
           </h3>
-          <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
+          <div className="flex gap-4 overflow-x-auto [&::-webkit-scrollbar]:hidden">
             {products.map((product) => (
               <Link href="/products" key={product.name}>
-                <Card className="relative min-w-[167px] rounded-lg max-w-96 overflow-hidden">
-                  <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-lg z-0">
-                    <Image
-                      src={product.image}
-                      fill
-                      className="object-cover rounded-lg hover:scale-110 hover:duration-300 duration-500"
-                      alt={product.alt}
-                    />
-                  </CardHeader>
-                  <CardContent className="bg-green-800/85 truncate text-white text-sm text-center font-semibold py-2 mt-32 mb-3 relative z-10">
-                    {product.name}
+                <Card className="min-w-[167px] max-w-28 rounded-2xl bg-gray-100">
+                  <CardContent className="px-1 py-0 pt-1">
+                    <div className="w-full h-[159px] relative">
+                      <Image
+                        alt={product.name}
+                        src={product.image}
+                        style={{
+                          objectFit: "cover",
+                        }}
+                        fill
+                        className="rounded-t-xl rounded-b-sm"
+                      />
+                    </div>
+                    <div className="px-2 pb-3">
+                      <h2 className="mt-2 overflow-hidden text-ellipsis text-nowrap text-sm text-center text-green-800 font-bold">
+                        {product.name}
+                      </h2>
+                    </div>
                   </CardContent>
                 </Card>
               </Link>
             ))}
           </div>
         </div>
-        <div className="my-4">
+        <div className="mt-6 mb-4">
           <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
             Our services
           </h3>
           <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
             {services.map((service) => (
               <Link href="/services" key={service.name}>
-                <Card className="relative min-w-[348px] rounded-lg max-w-96 overflow-hidden">
-                  <CardHeader className="absolute top-0 left-0 w-full h-full bg-slate-500 rounded-sm z-0">
-                    <Image
-                      src={service.image}
-                      fill
-                      className="object-cover rounded-sm hover:scale-110 hover:duration-300 duration-500"
-                      alt={service.alt}
-                    />
-                  </CardHeader>
-                  <CardContent className="bg-blue-800/85 truncate text-white text-sm text-center font-semibold py-2 mt-44 mb-3 relative z-10">
-                    {service.name}
+                <Card className="min-w-[167px] max-w-28 rounded-2xl bg-gray-100">
+                  <CardContent className="px-1 py-0 pt-1">
+                    <div className="w-full h-[159px] relative">
+                      <Image
+                        alt={service.name}
+                        src={service.image}
+                        style={{
+                          objectFit: "cover",
+                        }}
+                        fill
+                        className="rounded-t-xl rounded-b-sm"
+                      />
+                    </div>
+                    <div className="px-2 pb-3">
+                      <h2 className="mt-2 overflow-hidden text-ellipsis text-nowrap text-sm text-center text-blue-800 font-bold">
+                        {service.name}
+                      </h2>
+                    </div>
                   </CardContent>
                 </Card>
               </Link>
@@ -62,25 +76,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="my-4">
-        <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
-          Wild Camping
-        </h3>
-        <div className="relative w-full min-h-60">
-          <Link href="wildcamping">
-            <Image
-              src="/services/wildcampingAtPipleyBottomFarm.jpg"
-              alt="Wild Camping"
-              fill
-              objectFit="cover"
-              objectPosition="center"
-              className="absolute w-full rounded-lg"
-            />
-          </Link>
-        </div>
-      </div>
-
-      <div className="my-4">
+      <div className="mt-6 mb-4">
         <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
           About us
         </h3>
