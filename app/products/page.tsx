@@ -93,29 +93,8 @@ const ProductsPage = () => {
                       fill
                       className="rounded-t-xl rounded-b-sm"
                     />
-                    <div className="absolute top-2 right-2 z-10">
-                      {(product.type?.length ?? 0) > 1 ? (
-                        <Badge
-                          variant="secondary"
-                          className="bg-green-800/85 hover:bg-green-800/85 text-[10px] text-white"
-                        >
-                          {product.type?.length} types
-                        </Badge>
-                      ) : (
-                        ""
-                      )}
-                      {product.stock && (
-                        <Badge
-                          className={`text-white text-[10px] w-fit ml-2 ${
-                            getStockStatus(product.stock).style
-                          } hover:${getStockStatus(product.stock).style}`}
-                        >
-                          {getStockStatus(product.stock).text}
-                        </Badge>
-                      )}
-                    </div>
                   </div>
-                  <div className="px-2 pb-3">
+                  <div className="relative px-2 pb-3">
                     <h2 className="mt-2 overflow-hidden text-ellipsis text-nowrap text-base text-left text-green-800 font-semibold">
                       {product.name}
                     </h2>
@@ -140,6 +119,29 @@ const ProductsPage = () => {
                           )}
                         </Badge>
                       )}
+                    </div>
+                    <div className="absolute top-2 right-2 z-10">
+                      <div className="flex flex-col items-end gap-1">
+                        {product.stock && (
+                          <Badge
+                            className={`text-white text-[10px] w-fit ${
+                              getStockStatus(product.stock).style
+                            } hover:${getStockStatus(product.stock).style}`}
+                          >
+                            {getStockStatus(product.stock).text}
+                          </Badge>
+                        )}
+                        {(product.type?.length ?? 0) > 1 ? (
+                          <Badge
+                            variant="secondary"
+                            className="border-blue-800/85 hover:border-blue-800/85 text-[10px] text-blue-800"
+                          >
+                            {product.type?.length} products
+                          </Badge>
+                        ) : (
+                          ""
+                        )}
+                      </div>
                     </div>
                   </div>
                 </CardContent>
@@ -171,18 +173,8 @@ const ProductsPage = () => {
                       />
                     </div>
                   </div>
-                  <div className="flex items-center justify-center gap-2">
-                    {product.name}
-                    {(product.type?.length ?? 0) > 1 ? (
-                      <Badge
-                        variant="secondary"
-                        className="bg-green-800/85 hover:bg-green-800/85  text-white"
-                      >
-                        {product.type?.length} types
-                      </Badge>
-                    ) : (
-                      ""
-                    )}
+                  {product.name}
+                  <div className="flex items-center justify-center gap-1 mt-3">
                     {product.stock && (
                       <Badge
                         className={`text-white w-fit ${
@@ -191,6 +183,16 @@ const ProductsPage = () => {
                       >
                         {getStockStatus(product.stock).text}
                       </Badge>
+                    )}
+                    {(product.type?.length ?? 0) > 1 ? (
+                      <Badge
+                        variant="secondary"
+                        className="border-blue-800/85 hover:border-blue-800/85  text-blue-800"
+                      >
+                        {product.type?.length} products
+                      </Badge>
+                    ) : (
+                      ""
                     )}
                   </div>
                 </DialogTitle>
@@ -203,7 +205,7 @@ const ProductsPage = () => {
                   <TableHeader>
                     <TableRow>
                       <TableHead className="w-[250] font-bold">
-                        Product Type Name
+                        Product Name
                       </TableHead>
                       <TableHead className="text-right font-bold">
                         Price
