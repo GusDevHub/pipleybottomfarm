@@ -23,7 +23,12 @@ const Footer = () => {
                 </Link>
               </div>
               <div className="flex gap-1">
-                <p><span className="font-bold text-base text-white">Contact us</span> &mdash; Open from 8:00 AM to 5:00 PM</p>
+                <p>
+                  <span className="font-bold text-base text-white">
+                    Contact us
+                  </span>{" "}
+                  &mdash; Open from 8:00 AM to 5:00 PM
+                </p>
               </div>
               <div className="flex items-center justify-start gap-1">
                 <Phone size={12} className="inline-block text-yellow-400" />
@@ -46,7 +51,9 @@ const Footer = () => {
                     href="https://maps.app.goo.gl/mVsvqBjqeCq8pVy3A"
                     target="_blank"
                   >
-                    North Stoke Lane, Upton Cheyney, Bristol <span className="text-nowrap">BS30 6NG</span>, United Kingdom.
+                    North Stoke Lane, Upton Cheyney, Bristol{" "}
+                    <span className="text-nowrap">BS30 6NG</span>, United
+                    Kingdom.
                   </Link>
                 </p>
               </div>
@@ -100,7 +107,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <div className="mx-auto max-w-screen-lg w-full text-xs pt-10 pb-3">
-            &copy; 2010 -&nbsp;{new Date().getFullYear()} Copyright
+            &copy;&nbsp;{new Date().getFullYear()} Copyright
             <p className="font-bold">Pipley Bottom Farm</p>
           </div>
         </CardHeader>
