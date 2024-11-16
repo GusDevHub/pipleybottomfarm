@@ -36,13 +36,13 @@ export default function Home() {
                         fill
                         className="rounded-t-xl rounded-b-sm"
                       />
-                      <div className="absolute top-2 right-2 z-10">
+                      <div className="absolute bottom-3 right-2 z-10">
                         {(product.type?.length ?? 0) > 1 ? (
                           <Badge
                             variant="secondary"
-                            className="bg-green-800/85 hover:bg-green-800/85 text-[10px] text-white"
+                            className="bg-blue-800/85 hover:bg-blue-800/85 text-[10px] text-white"
                           >
-                            {product.type?.length} types
+                            {product.type?.length} products
                           </Badge>
                         ) : (
                           ""
@@ -50,7 +50,7 @@ export default function Home() {
                       </div>
                     </div>
                     <div className="px-2 pb-3">
-                      <h2 className="mt-2 overflow-hidden text-ellipsis text-nowrap text-sm text-center text-green-800 font-semibold">
+                      <h2 className="mt-2 overflow-hidden text-ellipsis text-nowrap text-sm text-left text-green-800 font-semibold">
                         {product.name}
                       </h2>
                     </div>

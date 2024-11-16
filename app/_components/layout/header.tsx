@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <Card className="rounded-none">
       <CardHeader className="p-2 max-w-5xl mx-auto">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between ml-3">
           {/* Logo */}
           <Link href="/">
             <Image

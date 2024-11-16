@@ -173,8 +173,8 @@ const ProductsPage = () => {
                       />
                     </div>
                   </div>
-                  {product.name}
-                  <div className="flex items-center justify-center gap-1 mt-3">
+                  <div className="text-left">{product.name}</div>
+                  <div className="flex items-center justify-start gap-1 mt-3">
                     {product.stock && (
                       <Badge
                         className={`text-white w-fit ${
