@@ -197,7 +197,9 @@ const ProductsPage = () => {
                   </div>
                 </DialogTitle>
                 {product.description && (
-                  <DialogDescription>{product.description}</DialogDescription>
+                  <DialogDescription className="text-left text-xs">
+                    {product.description}
+                  </DialogDescription>
                 )}
               </DialogHeader>
               {product.type && (
