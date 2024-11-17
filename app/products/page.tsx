@@ -33,11 +33,17 @@ type StockStatus = number | undefined;
 const getStockStatus = (stock: StockStatus) => {
   switch (stock) {
     case 1:
-      return { text: "Available", style: "bg-green-500" };
+      return {
+        text: "Available",
+        style: "border-green-500 text-green-500",
+      };
     case 2:
-      return { text: "Running low", style: "bg-yellow-500 text-yellow-800" };
+      return {
+        text: "Running low",
+        style: "border-yellow-500 text-yellow-800",
+      };
     case 3:
-      return { text: "Unavailable", style: "bg-red-500" };
+      return { text: "Unavailable", style: "border-red-500 text-red-500" };
     default:
       return { text: "Not provided", style: null };
   }
@@ -104,7 +110,7 @@ const ProductsPage = () => {
                           className={`w-fit ${
                             product.price.startsWith("£")
                               ? "bg-blue-500 hover:bg-blue-500 text-white"
-                              : "bg-yellow-400 hover:bg-green-500 text-yellow-800"
+                              : "bg-yellow-400 hover:bg-yellow-500 text-yellow-800"
                           } hover:text-white`}
                         >
                           {product.link ? (
@@ -124,7 +130,7 @@ const ProductsPage = () => {
                       <div className="flex flex-col items-end gap-1">
                         {product.stock && (
                           <Badge
-                            className={`text-white text-[10px] w-fit ${
+                            className={`bg-transparent text-white text-[10px] w-fit ${
                               getStockStatus(product.stock).style
                             } hover:${getStockStatus(product.stock).style}`}
                           >
