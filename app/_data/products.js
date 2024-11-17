@@ -129,7 +129,7 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    image: '/products/fertilised-egg.jpg',
+    image: '/products/young-chick.jpg',
     alt: 'Young Waterfowl',
   },
   {
