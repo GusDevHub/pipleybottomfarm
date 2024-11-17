@@ -1,5 +1,6 @@
 const products = [
   {
+    id: 'p1pl3y-123',
     name: 'Hay',
     price: '£4.50 per small bale',
     stock: 1,
@@ -9,10 +10,11 @@ const products = [
       price: '£4.50'
     },],
     link: '',
-    image: '/products/hay.jpg',
+    imageUrl: '/products/hay.jpg',
     alt: 'Hay',
   },
   {
+    id: 'p1pl3y-456',
     name: 'Straw',
     price: '£4.00',
     stock: 1,
@@ -22,18 +24,20 @@ const products = [
       price: '£4.00'
     },],
     link: '',
-    image: '/products/straw.jpg',
+    imageUrl: '/products/straw.jpg',
     alt: 'Straw',
   },
   {
+    id: 'p1pl3y-789',
     name: 'Haylage',
     price: 'Request availability info',
     stock: 3,
     link: '/contact',
-    image: '/products/haylage.jpg',
+    imageUrl: '/products/haylage.jpg',
     alt: 'Haylage',
   },
   {
+    id: 'p1pl3y-012',
     name: 'Kindling',
     price: '£6.00',
     stock: 2,
@@ -43,10 +47,11 @@ const products = [
       price: '£6.00 per plastic crate'
     },],
     link: '',
-    image: '/products/kindling.jpg',
+    imageUrl: '/products/kindling.jpg',
     alt: 'Kindling',
   },
   {
+    id: 'p1pl3y-345',
     name: 'Small logs',
     price: '£7.00',
     stock: 2,
@@ -56,10 +61,11 @@ const products = [
       price: '£7.00 per plastic crate'
     },],
     link: '',
-    image: '/products/small-log.jpg',
+    imageUrl: '/products/small-log.jpg',
     alt: 'Small log',
   },
   {
+    id: 'p1pl3y-678',
     name: 'Eggs',
     price: '£2.50 (6 units)',
     stock: 1,
@@ -72,10 +78,11 @@ const products = [
       price: '£1.50 per half dozen (tend to be smaller eggs)'
     },],
     link: '',
-    image: '/products/eggs.jpg',
+    imageUrl: '/products/eggs.jpg',
     alt: 'Eggs',
   },
   {
+    id: 'p1pl3y-901',
     name: 'Fertilised eggs',
     price: '£12.00 (6 units)',
     stock: 1,
@@ -87,10 +94,11 @@ const products = [
       price: '£10 per half dozen'
     },],
     link: '',
-    image: '/products/fertilised-egg.jpg',
+    imageUrl: '/products/fertilised-egg.jpg',
     alt: 'Fertilised eggs',
   },
   {
+    id: 'p1pl3y-234',
     name: 'Day old ducklings/chicks',
     price: 'Request availability info',
     stock: 3,
@@ -103,10 +111,11 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    image: '/products/duckling-chick.jpg',
+    imageUrl: '/products/duckling-chick.jpg',
     alt: 'Day old ducklings/chicks',
   },
   {
+    id: 'p1pl3y-567',
     name: 'Young Waterfowl',
     price: 'Request availability info',
     stock: 3,
@@ -116,10 +125,11 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    image: '/products/young-waterfowl.jpg',
+    imageUrl: '/products/young-waterfowl.jpg',
     alt: 'Young Waterfowl',
   },
   {
+    id: 'p1pl3y-890',
     name: 'Young Chickens',
     price: 'Request availability info',
     stock: 3,
@@ -129,10 +139,11 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    image: '/products/young-chick.jpg',
+    imageUrl: '/products/young-chick.jpg',
     alt: 'Young Waterfowl',
   },
   {
+    id: 'p1pl3y-765',
     name: 'Apples',
     price: 'Request availability info',
     stock: 3,
@@ -165,10 +176,11 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    image: '/products/apples.jpg',
+    imageUrl: '/products/apples.jpg',
     alt: 'Apples',
   },
   {
+    id: 'p1pl3y-432',
     name: 'Pears',
     price: 'Request availability info',
     stock: 3,
@@ -183,10 +195,11 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    image: '/products/pears.jpg',
+    imageUrl: '/products/pears.jpg',
     alt: 'Pears',
   },
   {
+    id: 'p1pl3y-109',
     name: 'Gages, plums, damsons',
     price: 'Request availability info',
     stock: 3,
@@ -210,10 +223,11 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    image: '/products/plums.jpg',
+    imageUrl: '/products/plums.jpg',
     alt: 'Gages, plums, damsons',
   },
   {
+    id: 'p1pl3y-876',
     name: 'Cherries',
     price: 'Request availability info',
     stock: 3,
@@ -225,10 +239,11 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    image: '/products/cherries.jpg',
+    imageUrl: '/products/cherries.jpg',
     alt: 'Cherries',
   },
   {
+    id: 'p1pl3y-543',
     name: 'Nuts',
     price: 'Request availability info',
     stock: 3,
@@ -246,10 +261,11 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    image: '/products/nuts.jpg',
+    imageUrl: '/products/nuts.jpg',
     alt: 'Nuts',
   },
   {
+    id: 'p1pl3y-210',
     name: 'Hedgerow fruit',
     price: 'Request availability info',
     stock: 3,
@@ -270,10 +286,11 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    image: '/products/hedgerow-fruits.jpg',
+    imageUrl: '/products/hedgerow-fruits.jpg',
     alt: 'Hedgerow fruit',
   },
   {
+    id: 'p1pl3y-987',
     name: 'British saanen goats cheese',
     price: 'Request availability info',
     stock: 3,
@@ -283,7 +300,7 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    image: '/products/goat-cheese.jpg',
+    imageUrl: '/products/goat-cheese.jpg',
     alt: 'British saanen goats cheese',
   },
 ];

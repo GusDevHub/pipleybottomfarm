@@ -39,7 +39,7 @@ const Header = () => {
 
           {/* Mobile Menu Button (hidden on larger screens) */}
           <Sheet>
-            <SheetTrigger className="md:hidden text-blue-800 mr-3">
+            <SheetTrigger className="md:hidden text-blue-800 mr-3" asChild>
               <Button variant="outline" size="icon">
                 <MenuIcon size={16} />
               </Button>

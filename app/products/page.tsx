@@ -92,7 +92,7 @@ const ProductsPage = () => {
                   <div className="w-full h-[159px] relative">
                     <Image
                       alt={product.name}
-                      src={product.image}
+                      src={product.imageUrl}
                       style={{
                         objectFit: "cover",
                       }}
@@ -159,7 +159,7 @@ const ProductsPage = () => {
                 <DialogTitle>
                   <div className="relative w-full mt-4 mb-8 h-40">
                     <Image
-                      src={product.image}
+                      src={product.imageUrl}
                       alt={product.name}
                       fill
                       objectFit="cover"

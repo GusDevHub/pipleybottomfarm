@@ -29,7 +29,7 @@ export default function Home() {
                     <div className="w-full h-[159px] relative">
                       <Image
                         alt={product.name}
-                        src={product.image}
+                        src={product.imageUrl}
                         style={{
                           objectFit: "cover",
                         }}
