@@ -46,7 +46,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center justify-start gap-1">
                 <MapPin className="w-3 h-3 inline-block text-yellow-400" />
-                <p className="text-[11px] sm:text-xs">
+                <p className="text-[10px] sm:text-xs">
                   <Link
                     href="https://maps.app.goo.gl/mVsvqBjqeCq8pVy3A"
                     target="_blank"
