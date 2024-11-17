@@ -17,6 +17,8 @@ export default function Home() {
           <DateDisplay />
         </div>
 
+        <div className="w-full h-40 rounded-lg gradient border my-6"></div>
+
         <div className="my-4">
           <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
             Our products
