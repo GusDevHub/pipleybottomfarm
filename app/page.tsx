@@ -17,7 +17,7 @@ export default function Home() {
           <DateDisplay />
         </div>
 
-        <div className="w-full h-40 rounded-lg gradient border my-6"></div>
+        <div className="w-full h-40 md:min-h-60 rounded-lg gradient border my-6"></div>
 
         <div className="my-4">
           <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
@@ -26,7 +26,7 @@ export default function Home() {
           <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
             {products.map((product) => (
               <Link href="/products" key={product.name}>
-                <Card className="min-w-[167px] max-w-28 rounded-2xl bg-gray-100">
+                <Card className="min-w-[167px] md:min-w-64 max-w-28 md:max-w-80 rounded-2xl bg-gray-100">
                   <CardContent className="px-1 py-0 pt-1">
                     <div className="w-full h-[159px] relative">
                       <Image
@@ -70,7 +70,7 @@ export default function Home() {
           <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
             {services.map((service) => (
               <Link href="/services" key={service.name}>
-                <Card className="min-w-[167px] max-w-28 rounded-2xl bg-gray-100">
+                <Card className="min-w-[167px] md:min-w-64 max-w-28 md:max-w-80 rounded-2xl bg-gray-100">
                   <CardContent className="px-1 py-0 pt-1">
                     <div className="w-full h-[159px] relative">
                       <Image
@@ -84,7 +84,7 @@ export default function Home() {
                       />
                     </div>
                     <div className="px-2 pb-3">
-                      <h2 className="mt-2 overflow-hidden text-ellipsis text-nowrap text-sm text-center text-blue-800 font-semibold">
+                      <h2 className="mt-2 overflow-hidden text-ellipsis text-nowrap text-sm text-center md:text-left text-blue-800 font-semibold">
                         {service.name}
                       </h2>
                     </div>
