@@ -133,7 +133,7 @@ const ProductsPage = () => {
                       <div className="flex flex-col items-end gap-1">
                         {product.stock && (
                           <Badge
-                            className={`bg-transparent text-white text-[10px] w-fit ${
+                            className={`bg-transparent hover:bg-transparent text-white text-[10px] w-fit ${
                               getStockStatus(product.stock).style
                             } hover:${getStockStatus(product.stock).style}`}
                           >
@@ -186,7 +186,7 @@ const ProductsPage = () => {
                   <div className="flex items-center justify-start gap-1 mt-3">
                     {product.stock && (
                       <Badge
-                        className={`text-white w-fit bg-transparent ${
+                        className={`text-white w-fit bg-transparent hover:bg-transparent ${
                           getStockStatus(product.stock).style
                         } hover:${getStockStatus(product.stock).style}`}
                       >
