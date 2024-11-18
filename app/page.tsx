@@ -25,7 +25,7 @@ export default function Home() {
           </h3>
           <div className="flex gap-3 overflow-x-auto [&::-webkit-scrollbar]:hidden">
             {products.map((product) => (
-              <Link href="/products" key={product.name}>
+              <Link href={`/products#${product.id}`} key={product.name}>
                 <Card className="min-w-[167px] md:min-w-64 max-w-28 md:max-w-80 rounded-2xl bg-gray-100">
                   <CardContent className="px-1 py-0 pt-1">
                     <div className="w-full h-[159px] relative">

@@ -86,7 +86,10 @@ const ProductsPage = () => {
               }
             }}
           >
-            <DialogTrigger onClick={() => setCurrentProductIndex(index)}>
+            <DialogTrigger
+              onClick={() => setCurrentProductIndex(index)}
+              id={product.id}
+            >
               <Card className="min-w-[167px] max-w-md rounded-2xl bg-gray-100">
                 <CardContent className="px-1 py-0 pt-1">
                   <div className="w-full h-[159px] relative">
