@@ -10,7 +10,7 @@ const products = [
       price: '£4.50'
     },],
     link: '',
-    imageUrl: '/products/hay.jpg',
+    imageUrl: 'utfs.iohttps://utfs.io/f/cPsT3qD5xBnl4n2bTWcuJcq3Lhbov09Z4kEfaDgtXwemWnOR',
     alt: 'Hay',
   },
   {
@@ -24,7 +24,7 @@ const products = [
       price: '£4.00'
     },],
     link: '',
-    imageUrl: '/products/straw.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlEnhpJmfWGA01hKc8Jrsl5X9CZ4TqYHvUpFNB',
     alt: 'Straw',
   },
   {
@@ -33,7 +33,7 @@ const products = [
     price: 'Request availability info',
     stock: 3,
     link: '/contact',
-    imageUrl: '/products/haylage.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlP4DGWIkcWd9VOoTZiqAa0xS6ClhszRMPw83k',
     alt: 'Haylage',
   },
   {
@@ -47,7 +47,7 @@ const products = [
       price: '£6.00 per plastic crate'
     },],
     link: '',
-    imageUrl: '/products/kindling.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnl6N2fAcBrvWaicL2sp460C7PtKmDTBfOnS3JU',
     alt: 'Kindling',
   },
   {
@@ -61,7 +61,7 @@ const products = [
       price: '£7.00 per plastic crate'
     },],
     link: '',
-    imageUrl: '/products/small-log.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlTOJ8wb0qb02DPSA6tyjBvpaZ8l7gKGi95CYU',
     alt: 'Small log',
   },
   {
@@ -78,7 +78,7 @@ const products = [
       price: '£1.50 per half dozen (tend to be smaller eggs)'
     },],
     link: '',
-    imageUrl: '/products/eggs.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlKpR1xtMvcnPEybT4AjOf2SGu1dpm8YqVklWF',
     alt: 'Eggs',
   },
   {
@@ -94,7 +94,7 @@ const products = [
       price: '£10 per half dozen'
     },],
     link: '',
-    imageUrl: '/products/fertilised-egg.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlgUFFuNZuVvfbtNFEm07p4ePzqS2wWBsd8ryD',
     alt: 'Fertilised eggs',
   },
   {
@@ -111,7 +111,7 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    imageUrl: '/products/duckling-chick.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlR5nofn3sUnr2vuZifo8StRjd0TDx7kQ4c3ah',
     alt: 'Day old ducklings/chicks',
   },
   {
@@ -125,7 +125,7 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    imageUrl: '/products/young-waterfowl.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnl669cyEBrvWaicL2sp460C7PtKmDTBfOnS3JU',
     alt: 'Young Waterfowl',
   },
   {
@@ -139,7 +139,7 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    imageUrl: '/products/young-chick.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlGKUCE7a2BTjKxS8JZEPsfXqeI20vDUtCH6yn',
     alt: 'Young Waterfowl',
   },
   {
@@ -176,7 +176,7 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    imageUrl: '/products/apples.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlK7Qq3kMvcnPEybT4AjOf2SGu1dpm8YqVklWF',
     alt: 'Apples',
   },
   {
@@ -195,7 +195,7 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    imageUrl: '/products/pears.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlSt4gobbUdRFw0IOr3JnPS4by7CNuYap8B2X9',
     alt: 'Pears',
   },
   {
@@ -223,7 +223,7 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    imageUrl: '/products/plums.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlClRi6h1NycZLBfxJumUIW4g08V6S3PQ27aKO',
     alt: 'Gages, plums, damsons',
   },
   {
@@ -239,7 +239,7 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    imageUrl: '/products/cherries.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlQRZlWJwAkahFmEjUJ05XZLSv2ntIKWc64iRz',
     alt: 'Cherries',
   },
   {
@@ -261,7 +261,7 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    imageUrl: '/products/nuts.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlODDSZGB4g2QCdNjtDrabxBkecGX5RuLlKVO8',
     alt: 'Nuts',
   },
   {
@@ -286,7 +286,7 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    imageUrl: '/products/hedgerow-fruits.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlsvwhhCGGVbOc06JnwlEqQ4512RvZSoDCXag3',
     alt: 'Hedgerow fruit',
   },
   {
@@ -300,7 +300,7 @@ const products = [
       price: 'Contact for price'
     },],
     link: '/contact',
-    imageUrl: '/products/goat-cheese.jpg',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnlxF7J3OR7IfJ2CvzwMqbHdAT0xjmiu4Z1KeEW',
     alt: 'British saanen goats cheese',
   },
 ];

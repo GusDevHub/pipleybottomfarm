@@ -103,7 +103,7 @@ export default function Home() {
         <div className="relative w-full min-h-60">
           <Link href="about">
             <Image
-              src="/farmview.jpg"
+              src="https://utfs.io/f/cPsT3qD5xBnllBrzot0jtmIPzi7bAsfY6Uu3he54FJO1EgKR"
               alt="Pipley Bottom Farm"
               fill
               objectFit="cover"
