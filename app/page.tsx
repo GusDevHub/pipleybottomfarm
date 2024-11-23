@@ -75,7 +75,7 @@ export default function Home() {
                     <div className="w-full h-[159px] relative">
                       <Image
                         alt={service.name}
-                        src={service.image}
+                        src={service.imageUrl}
                         style={{
                           objectFit: "cover",
                         }}
