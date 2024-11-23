@@ -10,7 +10,7 @@ const products = [
       price: '£4.50'
     },],
     link: '',
-    imageUrl: 'utfs.iohttps://utfs.io/f/cPsT3qD5xBnl4n2bTWcuJcq3Lhbov09Z4kEfaDgtXwemWnOR',
+    imageUrl: 'https://utfs.io/f/cPsT3qD5xBnl4n2bTWcuJcq3Lhbov09Z4kEfaDgtXwemWnOR',
     alt: 'Hay',
   },
   {
