@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import services from "./_data/services";
 import { Badge } from "./_components/ui/badge";
+import Banner from "./_components/banner";
+import banners from "./_data/banners";
 
 export default function Home() {
   return (
@@ -16,8 +18,10 @@ export default function Home() {
           </h2>
           <DateDisplay />
         </div>
-
-        <div className="w-full h-40 md:min-h-60 rounded-lg gradient border my-6"></div>
+        {/* banners */}
+        <div className="w-full gradient rounded-lg my-6">
+          <Banner banners={banners} />
+        </div>
 
         <div className="my-4">
           <h3 className="text-xs text-gray-400 font-bold uppercase mb-2">
