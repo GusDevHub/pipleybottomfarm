@@ -14,7 +14,7 @@ export default function Home() {
       <div className="mx-auto max-w-screen-lg">
         <div>
           <h2 className="text-sm text-green-800 font-semibold">
-            Welcome back!
+            Welcome!
           </h2>
           <DateDisplay />
         </div>
