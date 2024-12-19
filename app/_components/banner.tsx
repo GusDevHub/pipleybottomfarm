@@ -61,7 +61,7 @@ export default function Banner({ banners, autoPlayInterval = 5000 }: BannerProps
 
     return (
         <Card
-            className="w-full h-40 md:h-60 rounded-lg overflow-hidden relative cursor-grab active:cursor-grabbing"
+            className="w-full h-40 md:h-60 rounded-2xl overflow-hidden relative cursor-grab active:cursor-grabbing"
             ref={bannerRef}
             onTouchStart={handleDragStart}
             onTouchMove={handleDragMove}

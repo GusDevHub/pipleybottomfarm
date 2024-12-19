@@ -19,7 +19,7 @@ export default function Home() {
           <DateDisplay />
         </div>
         {/* banners */}
-        <div className="w-full gradient rounded-lg my-6">
+        <div className="w-full gradient rounded-2xl my-6">
           <Banner banners={banners} />
         </div>
 
