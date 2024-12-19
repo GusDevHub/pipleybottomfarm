@@ -100,7 +100,7 @@ export default function Banner({ banners, autoPlayInterval = 5000 }: BannerProps
                 {banners.map((_, index) => (
                     <button
                         key={index}
-                        className={`w-3 h-3 rounded-full transition-colors duration-300 ${index === currentBanner ? 'bg-white' : 'bg-white/50'
+                        className={`w-8 h-2 rounded-full transition-colors duration-300 ${index === currentBanner ? 'bg-yellow-300' : 'bg-white/50'
                             }`}
                         onClick={() => {
                             setCurrentBanner(index)
